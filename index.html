@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<title>Api Books Search</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link rel="stylesheet" href="https://cdn.rawgit.com/Dogfalo/materialize/fc44c862/dist/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		</head>
+ </script>
+<body>
+
+<a class="waves-effect waves-light btn modal-trigger"onclick="authenticate().then(loadClient)">Autorizar</a><br><br>
+<div class="container">	
+	<div class="row">
+		<div class="search" style="text-align: center"> 
+	  	  <form ><hs style: "font-size: 5px;">Google books-Youtube- Maps</h5><br>
+	        <input id="search" type="text" placeholder="Libro a buscar" style="width:500px;">
+	        <input id="search1" type="text" placeholder="Total de videos" style="width:200px;">
+            <button type="button" onclick="bookSearch()" class="" id="button" >Search</button>
+	      </form>
+	</div>
+	</div>
+</div>  
+<div class="container" id="grupos">
+	<div class="row">
+		<!--<div class="col s10 " id="videos">
+		 </div>-->
+	<div class="col s10" id="videos">
+       <table cellpadding="1" cellspacing="1" class="table table-hover" id="myTable">
+             <tbody id="tablita">
+             </tbody>
+        </table>
+         <div class="col-md-12 center text-center">
+            <ul class="pagination pager" id="myPager"></ul>
+          </div>
+      </div>
+		<div id="map-canvas">
+		</div>
+	</div>
+</div>
+<!--Scripts-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://cdn.rawgit.com/Dogfalo/materialize/fc44c862/dist/js/materialize.min.js"></script>
+	<!--Google Map-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+     <script type="text/javascript" src="https://cdn.rawgit.com/pinzon1992/materialize_table_pagination/f9a8478f/js/pagination.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb93lwXp_erla39AnETaxC8WWivSkVS-Q&callback=initialize">
+   	</script>
+	<script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

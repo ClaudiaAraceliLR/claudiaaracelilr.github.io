@@ -1,0 +1,57 @@
+
+body{
+  background: #F4F4F4;
+}
+
+#title{
+  background: url(../images/books.jpg);
+  width: 50px;
+  color: white;
+  font-family: 'Sofia', cursive; 
+}
+
+/*button {
+ border: none;
+ background: #A7723F  ;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 14px;
+ border-radius: 3px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+ font-family: 'Montserrat', cursive;
+}*/
+ 
+ #grupos{
+ 	position: absolute;
+ 	width: 3000px;
+ 	height: 520px;
+ 	background-color: #D5DBDB;
+ 	left: 50px;
+ }
+
+ #videos{
+ 	position: absolute;
+ 	width: 700px;
+ 	height: 400px;
+ 	top: 50px;
+ 	left: 50px;
+ }
+
+#map-canvas{
+ 	position: absolute;
+ 	width: 400px;
+ 	height: 400px;
+ 	background-color: #030;
+ 	top: 50px;
+ 	right: 50px;
+ }
+
+
+ #paginacion{
+ 	position: absolute;
+ 	top: 450px;
+ 	left: 70px;
+
+ }
