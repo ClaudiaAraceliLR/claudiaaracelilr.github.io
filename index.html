@@ -17,7 +17,9 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		</head>
 <body>
-<a class="waves-effect waves-light btn modal-trigger"onclick="authenticate().then(loadClient)">Autorizar</a><br><br>
+<button id="authorize-button" style="display: none;">Authorize</button>
+<button id="signout-button" style="display: none;">Sign Out</button>
+
 <div class="container">	
 	<div class="row">
 		<div class="input-field col s6 l12">
@@ -63,7 +65,9 @@
    </div>
 </div>
 <!--Google Map-->
-    <script src="https://maps.googleapis.com/maps/api/js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js"></script> <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb93lwXp_erla39AnETaxC8WWivSkVS-Q&callback=initialize">
    	</script>
